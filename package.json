@@ -1,0 +1,29 @@
+{
+  "name": "hdlss-browser-client",
+  "version": "0.1.0",
+  "description": "In-browser client-side helper for hdlss.io integration.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel index.js -o dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdlss/hdlss-browser-client.git"
+  },
+  "keywords": [
+    "hdlss.io",
+    "headless",
+    "chrome",
+    "puppeteer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hdlss/hdlss-browser-client/issues"
+  },
+  "homepage": "https://github.com/hdlss/hdlss-browser-client",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}

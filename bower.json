@@ -1,0 +1,23 @@
+{
+  "name": "hdlss-browser-client",
+  "description": "In-browser client-side helper for hdlss.io integration.",
+  "main": "dist/index.js",
+  "authors": [
+    "Denis Andrejew <da.colonel@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "hdlss.io",
+    "headless",
+    "chrome",
+    "puppeteer"
+  ],
+  "homepage": "https://github.com/hdlss/hdlss-browser-client",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

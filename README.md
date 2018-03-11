@@ -15,7 +15,7 @@ In-browser client-side helper for hdlss.io integration.
     ```
     script tag
     ```html
-    <script src="https://unpkg.com/hdlss-browser-client@^0.1></script>"
+    <script src="https://unpkg.com/hdlss-browser-client@^0.1"></script>
     ```
 
 2. Use it via the single global variable `hdlss` it exports:

@@ -2,7 +2,9 @@
 
 var hdlss = function () {
     function send(message) {
-        console.debug(JSON.stringify({ recipient: 'hdlss', message: message }));
+        var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+        console.debug('__hdlss__', JSON.stringify({ message: message, params: params }));
     }
 
     function getCookie(name) {
@@ -13,11 +15,11 @@ var hdlss = function () {
     }
 
     return {
-        ready: function ready() {
-            send('ready');
+        ready: function ready(params) {
+            send('ready', params);
         },
-        error: function error() {
-            send('error');
+        error: function error(params) {
+            send('error', params);
         },
         getEnv: function getEnv(name) {
             var env = JSON.parse(getCookie('hdlss_env') || '{}');

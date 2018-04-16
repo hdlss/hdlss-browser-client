@@ -1,6 +1,6 @@
 {
   "name": "hdlss-browser-client",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "In-browser client-side helper for hdlss.io integration.",
   "main": "dist/index.js",
   "scripts": {

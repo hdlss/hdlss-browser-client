@@ -1,6 +1,6 @@
 const hdlss = (function () {
-    function send(message) {
-        console.debug(JSON.stringify({recipient: 'hdlss', message}))
+    function send(message, params = {}) {
+        console.debug('__hdlss__', JSON.stringify({message, params}))
     }
 
     function getCookie(name) {
@@ -11,12 +11,12 @@ const hdlss = (function () {
     }
 
     return {
-        ready() {
-            send('ready')
+        ready(params) {
+            send('ready', params)
         },
 
-        error() {
-            send('error')
+        error(params) {
+            send('error', params)
         },
 
         getEnv(name) {
